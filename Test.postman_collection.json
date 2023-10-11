@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "1bfcc3ae-cfd7-4fd7-8790-caa1f604eb67",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7615664",
+		"_collection_link": "https://chiperjs.postman.co/workspace/Categories~42816ae9-a599-4ec9-bbb1-aa5065342fbe/collection/7615664-1bfcc3ae-cfd7-4fd7-8790-caa1f604eb67?action=share&source=collection_link&creator=7615664"
+	},
+	"item": [
+		{
+			"name": "Create Cart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "key=AAAAiJFSi_A:APA91bH-qKO6Dmn6BQMgO5SMeZ-D1OdYm6_DfHpMkBOBTuK6i2FSxqNXMl6f8w-eqQaNvBXqDYGI7r5ukg3mpcF8YLTJ8y8_q2O7KDfBgfd__vNIRa4VF5tGUIUrsqt-amJsvmlTvbAQ",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"xzczxc\",\r\n    \"products\": []\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}}/createCart",
+					"host": [
+						"{{url}}}"
+					],
+					"path": [
+						"createCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product To Cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"xzczxc\",\r\n    \"products\": [\r\n        {\r\n            \"name\": \"asd\",\r\n            \"category\": \"Coffee\",\r\n            \"price\": 1,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/addProductToCart",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"addProductToCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Cart",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"xzczxc\",\r\n    \"products\": [\r\n        {\r\n            \"name\": \"asd\",\r\n            \"category\": \"Coffee\",\r\n            \"price\": 1,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/updateCart",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"updateCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Made Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"xzczxc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/madeOrder",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"madeOrder"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
