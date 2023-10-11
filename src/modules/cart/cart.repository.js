@@ -1,4 +1,3 @@
-const mongoose = require('mongoose');
 const DatabaseMongo = require('../../db/mongo');
 const ErrorsHandlers = require('../../utils/errorsHandlers');
 

@@ -2,7 +2,7 @@ const Validators = require('./validator/validator');
 const { respondWithError } = require('../utils/responses');
 
 module.exports = function(validator) {
-  if (!Validators.hasOwnProperty(validator))
+  if (!Validators[validator])
     throw new Error(`'${validator}' validator is not exist`);
 
   return async function(req, res, next) {
